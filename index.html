@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/4c536a6bd5.js" crossorigin="anonymous"></script>
+    <title>Library</title>
+</head>
+
+<body>
+    <header>
+        <div id="head">
+            <h1 id="logo">library</h1>
+            <div id="active">
+                <button id="loginbtn" class="btn" type="button">Log in</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="main">
+            <button id="addbtn" class="btn" type="button">+ Add book</button>
+            <div id="content"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Copyright ©
+            <script>document.write(new Date().getFullYear())</script> MuhammadMarmash
+        </p>
+        <a href="https://github.com/MuhammadMarmash" target="_blank"><i class="fab fa-github"
+                aria-hidden="true"></i></a>
+    </footer>
+    <div class="modal" id="addBookModal">
+        <form id="addBookForm">
+            <h3>Add new book</h3>
+            <input class="input" type="text" placeholder="Title" id="title" required maxlength="100">
+            <input class="input" type="text" placeholder="Author" id="author" required maxlength="100">
+            <input class="input" type="number" placeholder="Pages" id="pages" required max="10000">
+            <div id="readdiv">
+                <label for="read">Have you read it?</label>
+                <input type="checkbox" id="read">
+            </div>
+            <button type="submit" class="btn btn-light-green" id="submitbtn">Submit</button>
+        </form>
+    </div>
+    <div class="overlay" id="overlay"></div>
+</body>
+
+</html>

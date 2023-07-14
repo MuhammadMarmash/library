@@ -30,7 +30,6 @@ body {
     font-size: 18px;
     font-weight: 500;
     word-wrap: break-word;
-    margin-bottom: 100px;
 }
 
 .btn:hover {
@@ -74,13 +73,13 @@ header {
     font-weight: bold;
 }
 
-/* body area */
+/* main area */
 #main {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: var(--spacing-lg);
+    text-align: center;
+    max-width: var(--container-width);
+    padding: var(--spacing-lg);
+    margin: 0 auto;
 }
 
 #addbtn {
@@ -140,6 +139,10 @@ input[type='number'] {
     background-color: var(--light-green);
 }
 
+.btn-light-red {
+    background-color: var(--light-red);
+}
+
 #submitbtn {
     width: 100%;
 }
@@ -156,6 +159,30 @@ input[type='number'] {
 
 .overlay.active {
     display: block;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: var(--spacing-lg);
+    gap: var(--spacing-lg);
+    background-color: var(--white);
+    line-height: 1.2;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.card button {
+    margin: ;
 }
 
 /* footer area */
